@@ -1,5 +1,5 @@
 ### GoogleSheets
-This repository was done to go along in [this](https://www.coletiv.com) article.
+This repository was done to go along with [this](https://www.coletiv.com) article.
 
 Google API and Google Sheets API Example Integration
 

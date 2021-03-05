@@ -20,9 +20,12 @@ defmodule GoogleSheetsWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", GoogleSheetsWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", GoogleSheetsWeb do
+    pipe_through :api
+
+    # Endpoint to receive google sheets consent to generate token
+    get("/consent", ConsentController, :consent)
+  end
 
   # Enables LiveDashboard only for development
   #

@@ -31,7 +31,8 @@ config :google_sheets, :api_secrets,
   client_id: System.get_env("GOOGLE_CLIENT_ID"),
   client_secret: System.get_env("GOOGLE_CLIENT_SECRET"),
   client_state: System.get_env("GOOGLE_CLIENT_STATE"),
-  redirect_uri: System.get_env("GOOGLE_CONSENT_REDIRECT_URI")
+  redirect_uri: System.get_env("GOOGLE_CONSENT_REDIRECT_URI"),
+  default_permission_email: System.get_env("DEFAULT_PERMISSION_EMAIL")
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
